@@ -1,0 +1,28 @@
+:root { --page: #f5f7fb; --ink: #182230; --muted: #718096; --line: #edf0f5; }
+body { background: var(--page); color: var(--ink); min-height: 100vh; }
+.navbar { min-height: 68px; }
+.navbar-brand { letter-spacing: -.4px; }
+.brand-mark { display: inline-grid; place-items: center; width: 29px; height: 29px; margin-right: 7px; border-radius: 9px; background: #e8efff; color: #315cce; }
+.eyebrow { color: #5274c8; font-size: .7rem; font-weight: 800; letter-spacing: 1.5px; }
+.date-label { padding: 7px 12px; border: 1px solid #e5eaf2; border-radius: 30px; background: white; color: var(--muted); font-size: .82rem; }
+.stat-card, .panel { border: 1px solid #e9edf4; border-radius: 15px; background: #fff; box-shadow: 0 5px 20px rgba(27, 43, 70, .035); }
+.stat-card { padding: 17px 20px; }
+.stat-number { font-size: 1.7rem; font-weight: 750; line-height: 1.2; }
+.stat-label { margin-top: 4px; color: var(--muted); font-size: .8rem; }
+.form-control { border-color: #e3e8f0; }
+.form-control:focus { border-color: #91aaf1; box-shadow: 0 0 0 .2rem rgba(49, 92, 206, .1); }
+.btn-primary { background: #315cce; border-color: #315cce; }
+.btn-primary:hover { background: #264db5; border-color: #264db5; }
+.task-row { display: flex; align-items: center; gap: 13px; flex-wrap: wrap; padding: 17px 20px; border-bottom: 1px solid var(--line); }
+.task-row:last-child { border-bottom: 0; }
+.check-button { display: grid; place-items: center; flex: 0 0 23px; width: 23px; height: 23px; padding: 0; border: 1.5px solid #cbd4e2; border-radius: 50%; background: #fff; color: white; font-size: .8rem; }
+.check-button.is-done { border-color: #269b68; background: #269b68; }
+.task-content { min-width: 0; flex: 1; }
+.task-title { overflow-wrap: anywhere; font-weight: 600; }
+.completed-title { color: #929cab; text-decoration: line-through; }
+.task-meta { margin-top: 3px; color: #98a2b2; font-size: .74rem; }
+.task-actions { display: flex; gap: 7px; }
+.edit-panel { padding: 2px 0 0 36px; }
+.empty-state { padding: 52px 20px; text-align: center; }
+.empty-icon { display: grid; place-items: center; width: 48px; height: 48px; margin: 0 auto 15px; border-radius: 15px; background: #eaf5ef; color: #269b68; font-size: 1.5rem; }
+@media (max-width: 575.98px) { main.container { padding-top: 2rem !important; } .stat-card { padding: 13px 10px; text-align: center; } .stat-number { font-size: 1.4rem; } .task-row { padding: 15px 13px; gap: 10px; } .task-actions { width: 100%; padding-left: 33px; } .edit-panel { padding-left: 0; } .filter-group .btn { padding-inline: .55rem; } }
